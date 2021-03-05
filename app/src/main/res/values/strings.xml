@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Encryption App</string>
+
+    <string name="text_title">Text to encrypt</string>
+    <string name="text_title_with_symbols">Text to encrypt (only letters, numbers and space)</string>
+    <string name="password_title">Password</string>
+    <string name="encrypt">Encrypt</string>
+    <string name="decrypt">Decrypt</string>
+    <string name="switch_to_symbols">Switch to symbols</string>
+</resources>

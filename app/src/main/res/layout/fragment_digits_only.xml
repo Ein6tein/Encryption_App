@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tv_text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@id/et_text"
+        android:text="@string/text_title"
+        app:layout_constraintBottom_toTopOf="@id/et_text"
+        app:layout_constraintStart_toStartOf="@id/et_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@id/tv_password_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_text_title"
+        tools:ignore="Autofill"
+        />
+
+    <TextView
+        android:id="@+id/tv_password_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:labelFor="@id/et_password"
+        android:text="@string/password_title"
+        app:layout_constraintBottom_toTopOf="@id/et_password"
+        app:layout_constraintStart_toStartOf="@id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/et_text"
+        />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_password_title"
+        tools:ignore="Autofill,TextFields"
+        />
+
+    <Button
+        android:id="@+id/btn_encrypt"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/encrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_encrypt"
+        />
+
+    <Button
+        android:id="@+id/btn_decrypt"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/decrypt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"
+        />
+
+    <TextView
+        android:id="@+id/tv_decrypt_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_decrypt"
+        />
+
+    <Button
+        android:id="@+id/btn_switch_to_symbols"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/switch_to_symbols"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_decrypt_result"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
